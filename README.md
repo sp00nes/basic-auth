@@ -1,37 +1,38 @@
-# package.json Notes:
+# LAB - Class 06
 
-## For React Applications
+## Project: Auth
 
- To deploy your application at GitHub pages, you'll need to add a home page property to your package.json which points to the deployed base URL of your GitHub Pages site.
- 
- *NOTE: This will break deployments to other hosting services such as Netlify, Vercel, or AWS Amplify, so if you later wish to deploy there, remove this property completely*
- 
-     {
-       "homepage": "https://yourname.github.io/repository-name"
-     }
+### Author: Martin Hansen
 
-## Node / Express Applications
+### Problem Domain
 
-### For Tests
-Your Scripts section should have the following, so that you can easily run tests locally and in your CI
+make a basic server with auth
 
-  "scripts": {
-    "start": "node index.js",
-    "lint": "eslint **/*.js",
-    "test": "jest --verbose --coverage",
-    "test-watch": "jest --watchAll --verbose --coverage"
-},
+### Links and Resources
 
+- [GitHub Actions ci/cd](http://xyz.com)
 
-### For NPM Modules
+### Setup
 
-If you are creating a module to deploy at NPM, you'll want a "bin" section that identifies the name of the global command to run and your .js file that runs when called.
+#### `.env` requirements (where applicable)
 
-"bin": {
-    "fetch": "index.js"
-}
+PORT=3000
+DATABASE_URL=postgres://localhost:5432/basic-auth
 
-Additionally, that file should have as it's first line, so that it'll run without having to type "node filename.js" every time
+#### How to initialize/run your application (where applicable)
 
-#!/usr/bin/env node
+- `npm start`
 
+#### Features / Routes
+
+- Feature One: Auth
+
+#### Tests
+
+fill this in as you see fit
+
+- npm test
+
+#### UML
+
+![06 uml](lab-06-UML.jpg)
