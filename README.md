@@ -10,7 +10,7 @@ make a basic server with auth
 
 ### Links and Resources
 
-- [GitHub Actions ci/cd](http://xyz.com)
+- [GitHub Actions ci/cd](https://github.com/sp00nes/basic-auth/actions)
 
 ### Setup
 
